@@ -60,6 +60,7 @@ body {
   font-weight: 400;
 }
 
+/* -------- Navbar -------- */
 .navbar {
   max-width: 1200px;
   display: flex;
@@ -95,11 +96,12 @@ body {
   border: none;
   background: #473BF0;
   color: rgba(255, 255, 255, 0.9);
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-weight: 500;
   font-size: 14px;
   border-radius: 8px;
   transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .navbar__button:hover {
@@ -111,7 +113,94 @@ body {
 }
 
 .icon-fill {
+  color: #161C2D !important;
+}
+
+/* -------- Hero -------- */
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header__top h1 {
+  width: 500px;
+  margin: 30px auto;
+  font-size: 36px;
+}
+
+.header__top p {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.header__top h1,
+.header__top p {
   color: #161C2D;
+}
+
+.hero__buttons {
+  display: flex;
+  margin: 30px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+  background: #473BF0;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  filter: brightness(150%);
+}
+
+.ghost__button {
+  border: none;
+  display: flex;
+  width: 230px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  text-align: center;
+  background: transparent;
+  color: #161C2D;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.ghost__button:hover {
+  background: rgba(22,28,45, 0.2);
+}
+
+.header__bottom {
+  width: 844px;
+  height: 559px;
+  margin: 0 auto;
+}
+
+.header__bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {
@@ -126,5 +215,53 @@ body {
 
   .navbar {
     padding: 15px 10px;
+  }
+
+  .header__top h1 {
+    width: 400px;
+    margin: 30px auto;
+    font-size: 24px;
+  }
+
+  .header__top p {
+    width: 450px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 30px;
+  }
+
+  .header__bottom {
+    width: 422px;
+    height: 279.5px;
+    margin: 0 auto;
+  }
+  
+  .header__bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__top p {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 30px;
+  }
+
+  .hero__buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ghost__button {
+    margin-top: 10px;
   }
 }
