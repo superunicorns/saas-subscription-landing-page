@@ -46,4 +46,48 @@ body {
   font-weight: 400;
 }
 
+.navbar {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  padding: 30px 10px;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.logo {
+  width: 154px;
+  height: 28px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navbar__list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  gap: 15px;
+} 
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__list,
+  .navbar__button {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    padding: 15px 10px;
+  }
+}
