@@ -29,6 +29,20 @@
 
 @font-face {
   font-family: "gilroy";
+  src: url(./fonts/gilroy-medium.ttf);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "gilroy";
+  src: url(./fonts/gilroy-semibold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "gilroy";
   src: url(./fonts/gilroy-bold.ttf);
   font-style: normal;
   font-weight: 700;
@@ -70,11 +84,34 @@ body {
   display: flex;
   padding: 0;
   list-style: none;
-  gap: 15px;
+  gap: 40px;
+  font-family: "gilroy";
+  font-weight: 600;
+  font-size: 14px;
+  color: #161C2D;
 } 
+
+.navbar__button {
+  border: none;
+  background: #473BF0;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all 300ms ease;
+}
+
+.navbar__button:hover {
+  filter: brightness(150%);
+}
 
 .menu-icon {
   display: none;
+}
+
+.icon-fill {
+  color: #161C2D;
 }
 
 @media screen and (max-width: 768px) {
